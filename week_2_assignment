@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enhanced Form Example</title>
+</head>
+<body>
+
+  <header>
+    <h1> Welcome to Our Enhanced Contact Page</h1>
+    <p>This page demonstrates <strong>HTML5 forms</strong> with accessibility, validation, and structured content.</p>
+  </header>
+
+  <main>
+    <!-- Media -->
+    <section>
+      <h2> Fun Video</h2>
+      <video controls width="400">
+        <source src="fun-video.mp4" type="video/mp4">
+        Sorry, your browser does not support video.
+      </video>
+    </section>
+
+    <!-- List -->
+    <section>
+      <h2> Features of This Page</h2>
+      <ul>
+        <li>Well-structured HTML using semantic tags</li>
+        <li>Accessible and validated form</li>
+        <li>Includes media, lists, and tables</li>
+      </ul>
+    </section>
+
+    <!-- Table -->
+    <section>
+      <h2> Popular Programming Languages</h2>
+      <table border="1">
+        <caption>Languages & Uses</caption>
+        <tr>
+          <th>Language</th>
+          <th>Use Case</th>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>Data Science, AI, Web Development</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Web Development</td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td>Mobile Apps, Enterprise Software</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Form -->
+    <section>
+      <h2> Contact Form</h2>
+      <form action="/submit" method="post" autocomplete="on">
+        
+        <!-- Name -->
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required autocomplete="name"><br><br>
+        
+        <!-- Email -->
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email"><br><br>
+        
+        <!-- Phone -->
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="+1234567890" pattern="^\+?\d{10,15}$" required autocomplete="tel"><br><br>
+        
+        <!-- Date -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+        
+        <!-- Read-only field -->
+        <label for="userid">User ID (read-only):</label><br>
+        <input type="text" id="userid" name="userid" value="USER12345" readonly><br><br>
+        
+        <!-- Dropdown -->
+        <label for="topic">Topic of Inquiry:</label><br>
+        <select id="topic" name="topic" required>
+          <option value="">-- Select a topic --</option>
+          <option value="support">Support</option>
+          <option value="feedback">Feedback</option>
+          <option value="other">Other</option>
+        </select><br><br>
+        
+        <!-- Radio buttons -->
+        <p>Preferred Contact Method:</p>
+        <input type="radio" id="contact-email" name="contact_method" value="email" required>
+        <label for="contact-email">Email</label>
+        
+        <input type="radio" id="contact-phone" name="contact_method" value="phone">
+        <label for="contact-phone">Phone</label><br><br>
+        
+        <!-- Checkboxes -->
+        <p>Subscribe to:</p>
+        <input type="checkbox" id="news" name="subscribe" value="newsletter">
+        <label for="news">Newsletter</label>
+        
+        <input type="checkbox" id="updates" name="subscribe" value="updates">
+        <label for="updates">Product Updates</label><br><br>
+        
+        <!-- Message -->
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" placeholder="Type your message here..." required></textarea><br><br>
+        
+        <!-- Submit -->
+        <button type="submit">Send Message</button>
+        
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Enhanced Form Demo | Built with ❤️ in HTML5</p>
+  </footer>
+
+</body>
+</html>
